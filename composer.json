@@ -6,7 +6,15 @@
     "type": "project",
     "require": {
         "php": ">=5.5.9",
-        "laravel/framework": "5.1.*"
+        "laravel/framework": "5.1.*",
+        "illuminate/html": "~5.0",
+        "swiggles/memcache": "~1.0",
+        "barryvdh/laravel-ide-helper": "2.x@dev",
+        "doctrine/dbal": "~2.3",
+        "orangehill/iseed": "dev-master",
+        "barryvdh/laravel-debugbar": "^2.0@dev",
+        "pda/pheanstalk": "~3.0",
+        "maatwebsite/excel": "~2.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
