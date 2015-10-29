@@ -141,7 +141,7 @@ return [
 		Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 		Orangehill\Iseed\IseedServiceProvider::class,
 		Maatwebsite\Excel\ExcelServiceProvider::class,
-
+		Kozz\Laravel\Providers\Guzzle::class
 	],
 	/*
 	|--------------------------------------------------------------------------
@@ -193,6 +193,7 @@ return [
 		'Html'      => Illuminate\Html\HtmlFacade::class,
 		'Debugbar'  => Barryvdh\Debugbar\Facade::class,
 		'Excel'     => Maatwebsite\Excel\Facades\Excel::class,
+		'Guzzle'    => Kozz\Laravel\Facades\Guzzle::class,
 	],
 
 ];

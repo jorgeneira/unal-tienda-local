@@ -12,5 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/pedidos');
 });
+
+Route::get('pedidos', 'PedidosController@index');
