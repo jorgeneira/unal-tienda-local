@@ -59,7 +59,7 @@ class UnalListenPedidos extends Command {
 	public function procesaNuevosPedidos() {
 
 
-		$res = $this->cliente->get('http://remote.unal/api/pedidos');
+		$res = $this->cliente->get(config('api.pedidosURL'));
 
 		$lista = json_decode($res->getBody()->getContents(), true);
 
@@ -81,7 +81,7 @@ class UnalListenPedidos extends Command {
 
 		$idsPedidos = array_pluck($lista, 'id');
 
-		$this->cliente->post('http://remote.unal/api/pedidos', [
+		$this->cliente->post(config('api.pedidosURL'), [
 			'form_params' => [
 				'pedidos' => $idsPedidos
 			]
