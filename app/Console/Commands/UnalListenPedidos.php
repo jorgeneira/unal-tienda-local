@@ -129,7 +129,9 @@ class UnalListenPedidos extends Command {
 
 			$excel->sheet('pedidoInfo', function ($sheet) use ($siguentePedido) {
 
-				$sheet->fromArray($siguentePedido);
+
+				/** @var \Maatwebsite\Excel\Classes\LaravelExcelWorksheet $sheet */
+				$sheet->fromArray([$siguentePedido]);
 
 			});
 
