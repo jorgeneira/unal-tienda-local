@@ -8,7 +8,7 @@ use GuzzleHttp\Client;
 use Illuminate\Console\Command;
 use Symfony\Component\Process\Process;
 
-class UnalProcessOutputData extends Command {
+class UnalProcessOutputCuarto extends Command {
 
     private $emailClientData = [];
     private $emailProvidersData = [];
@@ -26,7 +26,7 @@ class UnalProcessOutputData extends Command {
      *
      * @var string
      */
-    protected $signature = 'unal:processOutputData';
+    protected $signature = 'unal:processOutputCuarto';
 
     /**
      * The console command description.
@@ -186,7 +186,7 @@ class UnalProcessOutputData extends Command {
 
             pclose(popen('start /B ' . 'OUTLOOK', "r"));
 
-            sleep(5);
+            sleep(7);
 
             $this->info('Outlook listo!');
         }
