@@ -12,7 +12,7 @@ class Kernel extends ConsoleKernel {
 	 * @var array
 	 */
 	protected $commands = [
-		\App\Console\Commands\UnalListenPedidos::class,
+		\App\Console\Commands\UnalListenPedidosCuarto::class,
 		\App\Console\Commands\UnalProcessOutputCuarto::class,
 	];
 
