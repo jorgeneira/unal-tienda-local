@@ -148,7 +148,7 @@ class UnalListenPedidosCuarto extends Command {
 	public function handle() {
 
 		$this->info('Esperando pedidos...');
-		
+
 		while (1) {
 
 			$this->procesaNuevosPedidos();
