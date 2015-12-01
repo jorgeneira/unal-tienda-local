@@ -1,0 +1,28 @@
+'Declare Windows API Functions
+Private Declare Sub keybd_event Lib "user32" (ByVal bVk As Byte, ByVal _
+  bScan As Byte, ByVal dwFlags As Long, ByVal dwExtraInfo As Long)
+ 
+'Declare Virtual Key Codes
+Private Const VK_SNAPSHOT = &H2C
+Private Const VK_KEYUP = &H2
+Private Const VK_MENU = &H12
+
+ 
+Sub ScreenPrint()
+ 
+    'Press Print Screen key using Windows API -- Step2.
+    keybd_event VK_SNAPSHOT, 1, 0, 0 'Print Screen key down
+    keybd_event VK_SNAPSHOT, 1, VK_KEYUP, 0 'Print key Up - Screenshot to Clipboard
+ 
+    'Paste Image in Chart and Export it to Image file. -- Step3
+    Charts.Add
+    ThisWorkbook.Charts(1).AutoScaling = True
+    ThisWorkbook.Charts(1).Paste
+    ThisWorkbook.Charts(1).Export Filename:="E:\ClipBoardToPic.png", FilterName:="png"
+ 
+    'Supress warning message and Delete the Chart
+    Application.DisplayAlerts = False
+    ThisWorkbook.Charts(1).Delete
+    Application.DisplayAlerts = True
+ 
+End Sub
