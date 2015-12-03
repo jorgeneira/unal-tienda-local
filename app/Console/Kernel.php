@@ -13,6 +13,7 @@ class Kernel extends ConsoleKernel {
 	 */
 	protected $commands = [
 		\App\Console\Commands\UnalListenPedidosCuarto::class,
+		\App\Console\Commands\UnalListenPedidosCocina::class,
 		\App\Console\Commands\UnalProcessOutputCuarto::class,
 	];
 
