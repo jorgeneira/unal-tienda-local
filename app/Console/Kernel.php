@@ -15,6 +15,7 @@ class Kernel extends ConsoleKernel {
 		\App\Console\Commands\UnalListenPedidosCuarto::class,
 		\App\Console\Commands\UnalListenPedidosCocina::class,
 		\App\Console\Commands\UnalProcessOutputCuarto::class,
+		\App\Console\Commands\UnalProcessOutputCocina::class,
 	];
 
 	/**

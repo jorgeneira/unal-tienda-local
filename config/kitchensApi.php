@@ -9,6 +9,7 @@ return [
     'datosSalidaPath'     => storage_path('macros/cocina/Ejemplo2.xlsx'),
 
     'macroInicial'        => storage_path('macros/cocina/Lanzador.iam'),
+
     'macroEmailCliente'   => storage_path('macros/emails/cotizacionCocina.docm'),
-    'macroEmailProviders' => storage_path('macros/emails/proveedorCocina.docm'),
+    'macroEmailProviders' => storage_path('macros/emails/proveedor.docm'),
 ];
