@@ -175,11 +175,11 @@ class UnalListenPedidosCocina extends Command {
 			'pedidoID' => $siguientePedido['id']
 		]];
 
-		$hojas["Seccion {$siguientePedido['seccion_estufa']}"]["modulo_{$siguientePedido['modulo_estufa']}_sup"] = "-";
-		$hojas["Seccion {$siguientePedido['seccion_estufa']}"]["modulo_{$siguientePedido['modulo_estufa']}_inf"] = "-";
+		$hojas["Seccion {$siguientePedido['seccion_estufa']}"]["modulo_{$siguientePedido['modulo_estufa']}_sup"] = "E";
+		$hojas["Seccion {$siguientePedido['seccion_estufa']}"]["modulo_{$siguientePedido['modulo_estufa']}_inf"] = "E";
 
-		$hojas["Seccion {$siguientePedido['seccion_lavaplatos']}"]["modulo_{$siguientePedido['modulo_lavaplatos']}_sup"] = "-";
-		$hojas["Seccion {$siguientePedido['seccion_lavaplatos']}"]["modulo_{$siguientePedido['modulo_lavaplatos']}_inf"] = "-";
+		$hojas["Seccion {$siguientePedido['seccion_lavaplatos']}"]["modulo_{$siguientePedido['modulo_lavaplatos']}_sup"] = "L";
+		$hojas["Seccion {$siguientePedido['seccion_lavaplatos']}"]["modulo_{$siguientePedido['modulo_lavaplatos']}_inf"] = "L";
 
 
 

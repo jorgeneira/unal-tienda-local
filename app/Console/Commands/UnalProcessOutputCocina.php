@@ -264,7 +264,7 @@ class UnalProcessOutputCocina extends Command {
         $hoja1['idCotizacion'] = $this->remoteData['id'];
         $hoja1['nombre']       = $nombres[0];
         $hoja1['apellido']     = $nombres[1];
-        $hoja1['tipo']         = "Cocina";
+        $hoja1['tipoEstufa']   = "Cocina";
         $hoja1['correo']       = $this->remoteData['client']['email'];
         $hoja1['fecha']        = Carbon::parse($this->remoteData['created_at'])->addDays(5)->toFormattedDateString();
         $hoja1['total']        = $this->getTotalCost();
