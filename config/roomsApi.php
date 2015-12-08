@@ -3,8 +3,8 @@
 return [
     //'pedidosURL' => 'http://tienda.unaldev.co/api/cold-room-requests'
 
-    'providersURL'        => 'http://remote.unal/api/providers/cold-room',
-    'pedidosURL'          => 'http://remote.unal/api/cold-room-requests',
+    'providersURL'        => 'http://tienda.unaldev.co/api/providers/cold-room',
+    'pedidosURL'          => 'http://tienda.unaldev.co/api/cold-room-requests',
 
     'datosSalidaPath'     => storage_path('macros/cuarto/Datos de salida.xlsx'),
 
